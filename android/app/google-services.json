@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "303299432775",
+    "firebase_url": "https://crypto-e2271.firebaseio.com",
+    "project_id": "crypto-e2271",
+    "storage_bucket": "crypto-e2271.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303299432775:android:c37c0d1b9e9a7fcbe87c62",
+        "android_client_info": {
+          "package_name": "com.example.crypto_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303299432775-cli6hcnqod87eoa7t4ocbg8u16gncvtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFJH_LqnXNc19QEE5_zLekgTIeI_IJBI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303299432775-cli6hcnqod87eoa7t4ocbg8u16gncvtm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303299432775-0925d42nm6o1c41p3of4138hsbnkmebh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cryptoApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
