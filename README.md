@@ -1,5 +1,5 @@
 # crypto_app
-
+[video tutorial](https://www.youtube.com/watch?v=DxBAVmm6QA8&ab_channel=BleylDev&fbclid=IwAR2L3QkHwwTWUw5NV9VNk6m5fq4-LI9IlwCtwW6is33Um8kMVd5E8I1HrZw)
 A new Flutter project.
 
 ## Getting Started

@@ -1,3 +1,4 @@
+import 'package:crypto_app/net/flutterfire.dart';
 import 'package:flutter/material.dart';
 
 class Authentication extends StatefulWidget {
@@ -18,11 +19,12 @@ class _AuthenticationState extends State<Authentication> {
           color: Colors.blueAccent,
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             TextFormField(
               controller: _emailField,
               decoration: InputDecoration(
-                hintText: "example@email.com",
+                hintText: "E-mail",
                 hintStyle: TextStyle(
                   color: Colors.white,
                 ),
@@ -35,7 +37,7 @@ class _AuthenticationState extends State<Authentication> {
             TextFormField(
               controller: _passwordField,
               decoration: InputDecoration(
-                hintText: "password",
+                hintText: "******",
                 hintStyle: TextStyle(
                   color: Colors.white,
                 ),
@@ -54,9 +56,15 @@ class _AuthenticationState extends State<Authentication> {
                 color: Colors.white,
               ),
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () async {
+                  bool shouldNavigate =
+                      await signUp(_emailField.text, _passwordField.text);
+                      if (shouldNavigate) {
+                        //Navigate
+                      }
+                },
                 child: Text("Signup"),
-                ),
+              ),
             ),
             Container(
               width: MediaQuery.of(context).size.width / 1.4,
@@ -66,9 +74,15 @@ class _AuthenticationState extends State<Authentication> {
                 color: Colors.white,
               ),
               child: MaterialButton(
-                onPressed: () {},
-                child: Text("Login"),
-                ),
+                onPressed: () async {
+                  bool shouldNavigate =
+                      await signIn(_emailField.text, _passwordField.text);
+                      if (shouldNavigate) {
+                        //Navigate
+                      }
+                },
+                child: Text("Login",),
+              ),
             ),
           ],
         ),
